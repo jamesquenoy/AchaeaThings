@@ -1,10 +1,13 @@
+got_eq = gmcp.Char.Vitals.eq
+got_bal = gmcp.Char.Vitals.bal
+
 function malfunction()
-  if got_equib then
-    send("dohyponsisthingyhere")
+  if got_eq then
+    send("dance")
     return true
-  elseif got_balance then
-    send("dodstabthingyhere")
-    return 1.4 --set a custom timeout to 1.4s - if in 1.4s we didn't punch, the function will be run again for us
+  elseif got_bal then
+    send("tap")
+    return true
   end
 
   return false
