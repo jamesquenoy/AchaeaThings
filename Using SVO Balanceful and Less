@@ -2,12 +2,12 @@ got_eq = gmcp.Char.Vitals.eq
 got_bal = gmcp.Char.Vitals.bal
 
 function malfunction()
-  if got_eq then
+  if got_eq == "0" then
     send("dance")
-    return true
-  elseif got_bal then
+    return 1
+  elseif got_bal == "0" then
     send("tap")
-    return true
+  return 1
   end
 
   return false
